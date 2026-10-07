@@ -1,6 +1,6 @@
-# tanat
+# Tanat
 
-Keep a Mac awake, lid closed included, on battery or charger, no sudo.
+High-quality caffeination.
 
 ```sh
 cc -O2 -fobjc-arc -framework Cocoa -framework IOKit -o ~/.local/bin/tanat tanat.m
