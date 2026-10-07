@@ -3,6 +3,13 @@
 High-quality caffeination.
 
 ```sh
+brew install timdarcet/tap/tanat
+brew services start tanat    # menu bar icon at login
+```
+
+Or build it yourself:
+
+```sh
 cc -O2 -fobjc-arc -framework Cocoa -framework IOKit -o ~/.local/bin/tanat tanat.m
 
 tanat                # awake until Ctrl-C
