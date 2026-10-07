@@ -2,19 +2,27 @@
 
 High-quality caffeination.
 
+## Install
+
 ```sh
 brew install timdarcet/tap/tanat
-brew services start tanat    # menu bar icon at login
+brew services start tanat    # optional: menu bar icon at login
 ```
 
-Or build it yourself:
+Update with `brew upgrade tanat`, remove with `brew services stop tanat && brew uninstall tanat`.
+
+## Usage
 
 ```sh
-cc -O2 -fobjc-arc -framework Cocoa -framework IOKit -o ~/.local/bin/tanat tanat.m
-
 tanat                # awake until Ctrl-C
 tanat make build     # awake until the command exits
 tanat --bar          # menu bar icon: left click toggles, right click quits
+```
+
+## Build from source
+
+```sh
+cc -O2 -fobjc-arc -framework Cocoa -framework IOKit -o ~/.local/bin/tanat tanat.m
 ```
 
 Start the menu bar icon at login:
